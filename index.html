@@ -12,255 +12,16 @@
   <link href="assets/img/others/robot.png" rel="icon">
   <link href="assets/img/others/robot.png" rel="apple-touch-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,200;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    .schedule-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-      font-family: "Open Sans", Arial, sans-serif;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin: 20px 0;
-    }
-    .schedule-table th,
-    .schedule-table td {
-      padding: 12px 15px;
-      border-bottom: 1px solid #ccc;
-      text-align: left;
-    }
-    .schedule-table th {
-      background-color: #f7f7f7;
-      font-weight: bold;
-    }
-    .schedule-table tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    .schedule-table tbody tr:hover {
-      background-color: #f1f1f1;
-    }
-    .schedule-table tr.break-row td {
-      background-color: #fff3cd80 !important;
-      font-style: italic;
-    }
-    .schedule-table tr.welcome-row td {
-      background-color: #d1ecf180 !important;
-    }
-    .schedule-table tr.total-row td {
-      background-color: #0e1b4d !important;
-      color: #fff !important;
-      font-weight: 600;
-    }
-    .schedule-table tr.total-row td b { color: #fff; }
-    @media (max-width: 768px) {
-      .schedule-table th,
-      .schedule-table td { padding: 10px; }
-    }
-
-    #organizers .speaker img,
-    #advisors .speaker img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
-
-    .module-panel {
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 22px 26px;
-      box-shadow: 0 1px 0 rgba(14,27,77,0.06), 0 4px 14px rgba(14,27,77,0.06);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      border-left: 4px solid #f82249;
-      height: 100%;
-    }
-    .module-panel:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 2px 0 rgba(14,27,77,0.06), 0 10px 24px rgba(14,27,77,0.12);
-    }
-    .module-panel .module-tag {
-      display: inline-block;
-      font-family: "Raleway", sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: #f82249;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .module-panel h4 {
-      font-family: "Raleway", sans-serif;
-      font-weight: 700;
-      color: #0e1b4d;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    .module-panel p {
-      color: #4a5269;
-      font-size: 15.5px;
-      line-height: 1.65;
-      margin: 0;
-    }
-
-    .audience-card {
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 24px 26px;
-      box-shadow: 0 1px 0 rgba(14,27,77,0.06), 0 4px 14px rgba(14,27,77,0.06);
-      height: 100%;
-    }
-    .audience-card h4 {
-      font-family: "Raleway", sans-serif;
-      font-weight: 700;
-      color: #0e1b4d;
-      font-size: 20px;
-      margin-bottom: 12px;
-    }
-    .audience-card p { color: #4a5269; font-size: 16px; line-height: 1.65; margin: 0; }
-    .audience-card ul { color: #4a5269; font-size: 16px; line-height: 1.7; padding-left: 18px; margin: 0; }
-
-    .takeaway-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 18px;
-    }
-    .takeaway-item {
-      padding: 18px 20px;
-      background: #ffffff;
-      border-radius: 10px;
-      border-top: 3px solid #0e1b4d;
-      box-shadow: 0 1px 0 rgba(14,27,77,0.06), 0 4px 14px rgba(14,27,77,0.06);
-    }
-    .takeaway-item .takeaway-num {
-      font-family: "Raleway", sans-serif;
-      color: #f82249;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
-    .takeaway-item h5 {
-      font-family: "Raleway", sans-serif;
-      color: #0e1b4d;
-      font-weight: 700;
-      font-size: 17px;
-      margin: 6px 0 6px 0;
-    }
-    .takeaway-item p { color: #4a5269; font-size: 14.5px; line-height: 1.55; margin: 0; }
-
-    .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-    .pill {
-      background: #f6f7fd;
-      color: #0e1b4d;
-      padding: 6px 14px;
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 600;
-      border: 1px solid #e3e7f7;
-    }
-
-    .materials-card {
-      background: #0e1b4d;
-      color: #fff;
-      border-radius: 12px;
-      padding: 26px 28px;
-      box-shadow: 0 8px 30px rgba(14,27,77,0.18);
-    }
-    .materials-card h4 {
-      color: #fff;
-      font-family: "Raleway", sans-serif;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-    .materials-card p { color: rgba(255,255,255,0.85); margin-bottom: 14px; }
-    .materials-card a.btn-ghost {
-      display: inline-block;
-      padding: 8px 18px;
-      border: 2px solid #f82249;
-      color: #fff;
-      border-radius: 50px;
-      font-family: "Raleway", sans-serif;
-      font-weight: 600;
-      font-size: 13px;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
-      margin-right: 8px;
-      margin-top: 6px;
-    }
-    .materials-card a.btn-ghost:hover { background: #f82249; color: #fff; }
-
-    .hero-meta {
-      display: flex; gap: 22px; flex-wrap: wrap;
-      justify-content: center; margin-top: 18px;
-    }
-    .hero-meta span {
-      color: #fff; font-family: "Raleway", sans-serif;
-      letter-spacing: 1px; font-size: 14px; font-weight: 500;
-      padding: 8px 16px; border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 50px;
-    }
-    .hero-meta span b { color: #f82249; }
-
-    #hero h2 { font-size: 22px; font-weight: 400; }
-    @media (max-width: 991px){ #hero h2 { font-size: 16px; } }
-
-    .quote-banner {
-      background: linear-gradient(135deg, #0e1b4d 0%, #1a2a6b 100%);
-      color: #fff;
-      padding: 50px 30px;
-      border-radius: 14px;
-      margin: 40px 0;
-      text-align: center;
-      box-shadow: 0 12px 40px rgba(14,27,77,0.2);
-    }
-    .quote-banner p {
-      color: #fff;
-      font-family: "Raleway", sans-serif;
-      font-size: 22px;
-      font-weight: 300;
-      font-style: italic;
-      line-height: 1.5;
-      margin: 0 auto;
-      max-width: 880px;
-    }
-    .quote-banner .quote-attr {
-      color: #f82249;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 2px;
-      margin-top: 14px;
-      text-transform: uppercase;
-    }
-
-    .org-affil {
-      color: #6c757d;
-      font-size: 14px;
-      margin-top: 4px;
-    }
-
-    .lead-organizer {
-      display: inline-block;
-      background: #f82249;
-      color: #fff;
-      font-family: "Raleway", sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      padding: 3px 10px;
-      border-radius: 50px;
-      margin-bottom: 6px;
-      text-transform: uppercase;
-    }
-  </style>
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
 <body>
@@ -278,7 +39,6 @@
           <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
           <li><a class="nav-link scrollto" href="#materials">Materials</a></li>
           <li><a class="nav-link scrollto" href="mailto:hongru.carrywang@gmail.com">Contact</a></li>
-          <li><a class="nav-link scrollto" href="https://lifelongagent.github.io/" target="_blank">COLM Workshop</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -286,39 +46,52 @@
   </header>
 
   <section id="hero">
-    <div class="hero-container" data-aos="zoom-in" data-aos-delay="200">
-      <h1 class="mb-4 pb-0" style="text-transform: none;">
-        EMNLP 2026 Tutorial<br>
-        Lifelong Language Agents:<br>
-        Theory and Practice
+    <div class="hero-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="hero-kicker">
+        <span class="dot"></span>
+        <span class="mono">EMNLP 2026 · Three-Hour Tutorial</span>
+      </div>
+      <h1 class="mb-4 pb-0">
+        Lifelong Language Agents
+        <span class="serif">Theory &amp; Practice</span>
       </h1>
-      <h2 class="mb-4 pb-0" style="text-transform: none; color: white;">
-        A field map for reasoning, tools, memory, alignment, evolution, and evaluation<br>
-        of long-running language agents
+      <h2 class="mb-0">
+        A field map for reasoning, tools, memory, alignment, evolution,
+        and evaluation of long-running language agents.
       </h2>
       <div class="hero-meta">
-        <span><b>·</b> EMNLP 2026</span>
-        <span><b>·</b> 3-hour Tutorial</span>
-        <span><b>·</b> Hands-on Failure Diagnosis</span>
+        <span>Theory of Agent</span>
+        <span>Hands-on Failure Diagnosis</span>
+        <span>Reading List · Slides · Notebook</span>
       </div>
     </div>
+    <a href="#about" class="hero-scroll scrollto">Scroll to begin</a>
   </section>
 
   <main id="main">
 
     <section id="about">
       <div class="container position-relative" data-aos="fade-up">
+        <span class="about-kicker">§ 01 · Premise</span>
+        <h2>
+          From single-stage task solvers to long-running systems that
+          <em>reason, remember, and adapt.</em>
+        </h2>
         <div class="row">
-          <div class="col-lg-12">
-            <h2>About the Tutorial</h2>
-            <p style="font-size: 18px;">
+          <div class="col-lg-7">
+            <p>
               Language agents are rapidly evolving from <b>single-stage task solvers</b> into <b>long-running systems</b> that reason, use tools, maintain memory, and adapt under changing tools, users, tasks, and safety constraints. Despite substantial progress in reasoning, tool use, alignment, and evaluation, the community still lacks a unified vocabulary for analyzing <em>when</em> agent capabilities should be invoked, constrained, updated, and evaluated over time.
             </p>
-            <p style="font-size: 18px;">
+            <p>
               This tutorial addresses that gap by organizing lifelong language agents around an <b>agent lifecycle</b>: foundations, capability formation, behavior and alignment, evolution, and evaluation. We introduce the <b>Theory of Agent (ToA)</b> as a diagnostic framework for analyzing knowledge boundaries, epistemic necessity, and effort allocation, and use it to connect methods for building, regulating, adapting, and evaluating agent systems.
             </p>
-            <p style="font-size: 18px;">
-              Designed for students, researchers, and industry practitioners, the tutorial provides a compact field map, a reusable diagnostic vocabulary, a curated reading list, and a hands-on failure-diagnosis exercise. The question that anchors everything: <em>how should an agent decide when to reason internally, when to act externally, when to update, and how much effort to allocate over persistent interaction?</em>
+          </div>
+          <div class="col-lg-5">
+            <p>
+              Designed for students, researchers, and industry practitioners, the tutorial provides a compact field map, a reusable diagnostic vocabulary, a curated reading list, and a hands-on failure-diagnosis exercise.
+            </p>
+            <p>
+              The question that anchors everything: <em>how should an agent decide when to reason internally, when to act externally, when to update, and how much effort to allocate over persistent interaction?</em>
             </p>
           </div>
         </div>
@@ -326,101 +99,89 @@
     </section>
 
     <section id="outline" class="section-with-bg">
-      <br><br>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Tutorial Outline</h2>
-          <p>Six modules following the lifecycle of a language agent</p>
+          <h2>§ 02 · Outline</h2>
+          <span class="display-title">Six modules along the <em>agent lifecycle</em>.</span>
+          <p>From motivating failures to capability formation, alignment, evolution, and a hands-on failure-diagnosis exercise.</p>
         </div>
 
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="module-panel" data-aos="fade-up" data-aos-delay="100">
-              <div class="module-tag">Module 1 · 10 min</div>
-              <h4>Welcome &amp; Motivating Failures</h4>
-              <p>Representative failures that expose the limits of current language agents: outdated parametric knowledge, tool overuse, behavioral degradation under drift. From failure cases to the central question of the tutorial.</p>
-            </div>
+        <div class="outline-grid">
+          <div class="outline-card" data-num="01" data-aos="fade-up" data-aos-delay="50">
+            <div class="module-tag">Module 01 · 10 min</div>
+            <h4>Welcome &amp; Motivating Failures</h4>
+            <p>Representative failures that expose the limits of current language agents: outdated parametric knowledge, tool overuse, behavioral degradation under drift. From failure cases to the central question of the tutorial.</p>
           </div>
-          <div class="col-md-6">
-            <div class="module-panel" data-aos="fade-up" data-aos-delay="150">
-              <div class="module-tag">Module 2 · 30 min</div>
-              <h4>Foundations of Agents</h4>
-              <p>Theory of Agent (ToA) as a diagnostic framework. Three core concepts: <b>knowledge boundary</b>, <b>epistemic necessity</b>, and <b>epistemic effort allocation</b>. Why overthinking, underthinking, overacting, and underacting all share a single source.</p>
-            </div>
+          <div class="outline-card" data-num="02" data-aos="fade-up" data-aos-delay="100">
+            <div class="module-tag">Module 02 · 30 min</div>
+            <h4>Foundations of Agents</h4>
+            <p>Theory of Agent (ToA) as a diagnostic framework. Three core concepts: <b>knowledge boundary</b>, <b>epistemic necessity</b>, and <b>epistemic effort allocation</b>. Why overthinking, underthinking, overacting, and underacting all share a single source.</p>
           </div>
-          <div class="col-md-6">
-            <div class="module-panel" data-aos="fade-up" data-aos-delay="200">
-              <div class="module-tag">Module 3 · 35 min</div>
-              <h4>Capability Formation</h4>
-              <p>How agents acquire capabilities for sustained operation: reasoning, planning, tool invocation and composition, memory, and interaction-based learning. Organized by the capabilities they add, not by individual systems.</p>
-            </div>
+          <div class="outline-card" data-num="03" data-aos="fade-up" data-aos-delay="150">
+            <div class="module-tag">Module 03 · 35 min</div>
+            <h4>Capability Formation</h4>
+            <p>How agents acquire capabilities for sustained operation: reasoning, planning, tool invocation and composition, memory, and interaction-based learning. Organized by the capabilities they add, not by individual systems.</p>
           </div>
-          <div class="col-md-6">
-            <div class="module-panel" data-aos="fade-up" data-aos-delay="250">
-              <div class="module-tag">Module 4 · 40 min</div>
-              <h4>Behavior &amp; Alignment</h4>
-              <p>Think-versus-act routing, reasoning and tool budgets, memory-update decisions, clarification and stopping, tool overuse and underuse, and safety constraints. Alignment as a deployment-time control problem.</p>
-            </div>
+          <div class="outline-card" data-num="04" data-aos="fade-up" data-aos-delay="200">
+            <div class="module-tag">Module 04 · 40 min</div>
+            <h4>Behavior &amp; Alignment</h4>
+            <p>Think-versus-act routing, reasoning and tool budgets, memory-update decisions, clarification and stopping, tool overuse and underuse, and safety constraints. Alignment as a deployment-time control problem.</p>
           </div>
-          <div class="col-md-6">
-            <div class="module-panel" data-aos="fade-up" data-aos-delay="300">
-              <div class="module-tag">Module 5 · 30 min</div>
-              <h4>Evolution of Agents</h4>
-              <p>From single-session behavior to long-term evolution. Drift in tools, users, tasks, and safety. The movement of the knowledge boundary over time: internal capabilities, memory, learned skills, tool compositions, and world-model internalization.</p>
-            </div>
+          <div class="outline-card" data-num="05" data-aos="fade-up" data-aos-delay="250">
+            <div class="module-tag">Module 05 · 30 min</div>
+            <h4>Evolution of Agents</h4>
+            <p>From single-session behavior to long-term evolution. Drift in tools, users, tasks, and safety. The movement of the knowledge boundary over time: internal capabilities, memory, learned skills, tool compositions, and world-model internalization.</p>
           </div>
-          <div class="col-md-6">
-            <div class="module-panel" data-aos="fade-up" data-aos-delay="350">
-              <div class="module-tag">Module 6 · 35 min</div>
-              <h4>Evaluation &amp; Failure Diagnosis</h4>
-              <p>Why final-answer accuracy is insufficient. A multi-dimensional evaluation view: task success, efficiency, robustness, safety, memory quality, adaptation, and long-horizon stability. Closes with a hands-on failure-diagnosis exercise.</p>
-            </div>
+          <div class="outline-card" data-num="06" data-aos="fade-up" data-aos-delay="300">
+            <div class="module-tag">Module 06 · 35 min</div>
+            <h4>Evaluation &amp; Failure Diagnosis</h4>
+            <p>Why final-answer accuracy is insufficient. A multi-dimensional evaluation view: task success, efficiency, robustness, safety, memory quality, adaptation, and long-horizon stability. Closes with a hands-on failure-diagnosis exercise.</p>
           </div>
         </div>
 
         <div class="quote-banner" data-aos="fade-up">
-          <p>"The question moves beyond whether an agent can reason or call tools in a single task. It becomes how an agent should allocate effort across internal reasoning, external action, memory use, updating, and stopping over time."</p>
-          <div class="quote-attr">— Theory of Agent</div>
+          <p>The question moves beyond whether an agent can reason or call tools in a single task. It becomes how an agent should allocate effort across internal reasoning, external action, memory use, updating, and stopping over time.</p>
+          <div class="quote-attr">Theory of Agent</div>
         </div>
       </div>
-      <br><br>
     </section>
 
     <section id="takeaways">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>What Attendees Take Home</h2>
-          <p>Concrete artifacts and a reusable vocabulary for lifelong agents</p>
+          <h2>§ 03 · Take-home</h2>
+          <span class="display-title">A compact <em>field map</em> and a reusable vocabulary.</span>
+          <p>Six artifacts you leave with — beyond a set of slides.</p>
         </div>
 
         <div class="takeaway-grid">
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="takeaway-num">01</div>
+          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="50">
+            <div class="takeaway-num">Item · 01</div>
             <h5>A Compact Field Map</h5>
             <p>The full landscape of lifelong agents organized around a single lifecycle, not scattered by sub-area.</p>
           </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="150">
-            <div class="takeaway-num">02</div>
+          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="takeaway-num">Item · 02</div>
             <h5>A Reusable Vocabulary</h5>
             <p>Knowledge boundary, epistemic necessity, and effort allocation as a diagnostic language across reasoning, tools, memory, routing, safety, and evaluation.</p>
           </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="takeaway-num">03</div>
+          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="takeaway-num">Item · 03</div>
             <h5>A Curated Reading List</h5>
             <p>Organized by lifecycle stage, marked with suggested pre-readings, balancing presenter-led work with broad external coverage.</p>
           </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="250">
-            <div class="takeaway-num">04</div>
+          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="takeaway-num">Item · 04</div>
             <h5>A Hands-on Exercise</h5>
             <p>A failure-diagnosis exercise: classify representative agent trajectories using ToA concepts. Bring your laptop.</p>
           </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="takeaway-num">05</div>
+          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="250">
+            <div class="takeaway-num">Item · 05</div>
             <h5>Classroom-ready Slides</h5>
             <p>Released openly through this site and the ACL Anthology, designed for graduate seminars and discussion sessions.</p>
           </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="350">
-            <div class="takeaway-num">06</div>
+          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="takeaway-num">Item · 06</div>
             <h5>A Minimal Demo Notebook</h5>
             <p>A small, runnable companion that grounds the diagnostic concepts in actual agent code, traces, and failure modes.</p>
           </div>
@@ -428,19 +189,19 @@
       </div>
     </section>
 
-    <section id="schedule" class="section-with-bg">
-      <br><br>
+    <section id="schedule">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Schedule</h2>
-          <p>Three-hour tutorial · 3.5-hour slot including coffee break</p>
+          <h2>§ 04 · Schedule</h2>
+          <span class="display-title">A three-hour <em>tutorial</em> in a 3.5-hour slot.</span>
+          <p>Including coffee break · timings indicative · structured around the six modules.</p>
         </div>
         <div class="table-responsive">
           <table class="schedule-table table align-middle">
             <thead>
               <tr>
-                <th style="width:130px;">Duration</th>
-                <th style="width:230px;">Block</th>
+                <th>Duration</th>
+                <th>Block</th>
                 <th>Focus</th>
               </tr>
             </thead>
@@ -481,38 +242,40 @@
                 <td>Multi-dimensional evaluation; failure diagnosis; Q&amp;A.</td>
               </tr>
               <tr class="total-row">
-                <td><b>180 min</b></td>
-                <td><b>Total Content</b></td>
+                <td>180 min</td>
+                <td>Total Content</td>
                 <td>Three-hour tutorial content.</td>
               </tr>
               <tr class="total-row">
-                <td><b>210 min</b></td>
-                <td><b>Total Slot</b></td>
+                <td>210 min</td>
+                <td>Total Slot</td>
                 <td>Including coffee break.</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <br><br>
     </section>
 
-    <section id="audience" style="padding-top: 60px;">
+    <section id="audience">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Audience &amp; Prerequisites</h2>
-          <p>Self-contained at the conceptual level · ~200–300 expected attendees</p>
+          <h2>§ 05 · Audience</h2>
+          <span class="display-title">Self-contained at the <em>conceptual</em> level.</span>
+          <p>~200–300 expected attendees · aligned with EMNLP 2026's "New Missions for NLP Research."</p>
         </div>
 
         <div class="row g-4">
           <div class="col-lg-4">
-            <div class="audience-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="audience-card" data-aos="fade-up" data-aos-delay="50">
+              <div class="audience-icon"><i class="bi bi-people-fill"></i></div>
               <h4>Who Should Attend</h4>
               <p>Researchers, Ph.D. students, advanced master's students, and industry practitioners working on language agents, tool learning, RAG, dialogue systems, alignment, AI safety, and agentic system deployment.</p>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="audience-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="audience-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="audience-icon"><i class="bi bi-mortarboard-fill"></i></div>
               <h4>Expected Background</h4>
               <ul>
                 <li>LLMs &amp; prompting</li>
@@ -521,14 +284,15 @@
                 <li>SFT / DPO / PPO / RLHF basics</li>
               </ul>
               <div class="pill-row">
-                <span class="pill">Helpful: Basic RL</span>
-                <span class="pill">Helpful: Python &amp; agent frameworks</span>
+                <span class="pill">Helpful · Basic RL</span>
+                <span class="pill">Helpful · Python</span>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="audience-card" data-aos="fade-up" data-aos-delay="200">
-              <h4>EMNLP 2026 Theme Alignment</h4>
+            <div class="audience-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="audience-icon"><i class="bi bi-compass-fill"></i></div>
+              <h4>EMNLP 2026 Theme</h4>
               <p>Aligned with EMNLP 2026's <em>"New Missions for NLP Research"</em>: language agents as long-running systems rather than static text generators — connecting core NLP research to deployment challenges in tool use, memory, safety, evaluation, and long-term adaptation.</p>
             </div>
           </div>
@@ -536,94 +300,86 @@
       </div>
     </section>
 
-    <section id="organizers" class="section-with-bg">
-      <br><br>
+    <section id="organizers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Organizers</h2>
-          <p>This tutorial is organized by</p>
+          <h2>§ 06 · Organizers</h2>
+          <span class="display-title">Built by a team spanning <em>academia</em> and <em>industry</em>.</span>
+          <p>Edinburgh · UIUC · Oxford · Northwestern</p>
         </div>
 
         <div class="row justify-content-center">
           <div class="col-md-4 col-sm-6 col-12">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="50">
               <img src="assets/img/organizers/profile_hongru.jpeg" alt="Hongru Wang" class="img-fluid">
-              <div class="lead-organizer">Primary Contact</div>
-              <br><a href="https://hrwise-nlp.github.io/" style="font-size: 1.2em; color: #00356B;">Hongru Wang</a></br>
+              <br><a href="https://hrwise-nlp.github.io/" target="_blank">Hongru Wang</a><br>
               <p class="org-affil">University of Edinburgh</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="150" style="text-align: center;">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <img src="assets/img/organizers/profile_cheng.jpg" alt="Cheng Qian" class="img-fluid">
-              <br><a href="https://qiancheng0.github.io/" style="font-size: 1.2em; color: #00356B;">Cheng Qian</a></br>
+              <br><a href="https://qiancheng0.github.io/" target="_blank">Cheng Qian</a><br>
               <p class="org-affil">University of Illinois Urbana-Champaign</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150">
               <img src="assets/img/organizers/profile_emre.jpeg" alt="Emre Can Acikgoz" class="img-fluid">
-              <br><a href="https://emrecanacikgoz.github.io/" style="font-size: 1.2em; color: #00356B;">Emre Can Acikgoz</a></br>
+              <br><a href="https://emrecanacikgoz.github.io/" target="_blank">Emre Can Acikgoz</a><br>
               <p class="org-affil">University of Illinois Urbana-Champaign</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="250" style="text-align: center;">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/organizers/profile_zhenfei.jpg" alt="Zhenfei Yin" class="img-fluid">
-              <br><a href="https://yinzhenfei.github.io/" style="font-size: 1.2em; color: #00356B;">Zhenfei Yin</a></br>
+              <br><a href="https://yinzhenfei.github.io/" target="_blank">Zhenfei Yin</a><br>
               <p class="org-affil">University of Oxford</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
               <img src="assets/img/organizers/profile_manling.jpg" alt="Manling Li" class="img-fluid">
-              <br><a href="https://limanling.github.io/" style="font-size: 1.2em; color: #00356B;">Manling Li</a></br>
+              <br><a href="https://limanling.github.io/" target="_blank">Manling Li</a><br>
               <p class="org-affil">Northwestern University</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="350" style="text-align: center;">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="assets/img/organizers/profile_heng.jpeg" alt="Heng Ji" class="img-fluid">
-              <br><a href="https://blender.cs.illinois.edu/hengji.html" style="font-size: 1.2em; color: #00356B;">Heng Ji</a></br>
+              <br><a href="https://blender.cs.illinois.edu/hengji.html" target="_blank">Heng Ji</a><br>
               <p class="org-affil">University of Illinois Urbana-Champaign / Amazon Scholar</p>
             </div>
           </div>
         </div>
       </div>
-      <br><br>
     </section>
 
-    <section id="materials" style="padding-top: 60px; padding-bottom: 60px;">
+    <section id="materials">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Materials &amp; Open Access</h2>
-          <p>Released openly through this site and the ACL Anthology</p>
+          <h2>§ 07 · Materials</h2>
+          <span class="display-title">Released openly through this site and the <em>ACL Anthology</em>.</span>
+          <p>Classroom-ready slides, a curated reading list, and a minimal demo notebook.</p>
         </div>
 
         <div class="row g-4">
           <div class="col-lg-6">
-            <div class="materials-card" data-aos="fade-up" data-aos-delay="100">
-              <h4>Slides &amp; Notebook</h4>
-              <p>Classroom-ready slides covering all six modules, plus a minimal demo notebook for the failure-diagnosis exercise. Suitable for graduate seminars.</p>
+            <div class="materials-card" data-aos="fade-up" data-aos-delay="50">
+              <span class="materials-kicker">Slides · Notebook</span>
+              <h4>Classroom-ready, six modules.</h4>
+              <p>Designed for graduate seminars: covering ToA, capability formation, alignment, evolution, and evaluation. The companion notebook grounds the diagnostic concepts in runnable agent code.</p>
               <a class="btn-ghost" href="#">Slides · Coming Soon</a>
               <a class="btn-ghost" href="#">Demo Notebook · Coming Soon</a>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="materials-card" data-aos="fade-up" data-aos-delay="150">
-              <h4>Reading List</h4>
-              <p>A curated reading list organized by tutorial lifecycle: foundations, capability formation, behavior and alignment, evolution, and evaluation. Pre-readings will be clearly marked.</p>
+            <div class="materials-card" data-aos="fade-up" data-aos-delay="100">
+              <span class="materials-kicker">Reading list · Discussion</span>
+              <h4>A curated path through the field.</h4>
+              <p>Organized by tutorial lifecycle — foundations, capability formation, behavior and alignment, evolution, and evaluation. Pre-readings will be clearly marked.</p>
               <a class="btn-ghost" href="#">Reading List · Coming Soon</a>
               <a class="btn-ghost" href="#">Discussion Questions · Coming Soon</a>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="materials-card" data-aos="fade-up" data-aos-delay="200" style="background: #ffffff; color: #0e1b4d; border: 1px solid #e3e7f7; box-shadow: 0 1px 0 rgba(14,27,77,0.06), 0 4px 14px rgba(14,27,77,0.06);">
-              <h4 style="color:#0e1b4d;">Related Venues</h4>
-              <p style="color:#4a5269;">This tutorial builds on a growing community effort around lifelong agents:</p>
-              <a class="btn-ghost" style="color:#0e1b4d; border-color:#0e1b4d;" href="https://lifelongagent.github.io/" target="_blank">COLM 2026 Workshop on Lifelong Agents</a>
-              <a class="btn-ghost" style="color:#0e1b4d; border-color:#0e1b4d;" href="#" target="_blank">ICLR 2026 Lifelong Agents Workshop</a>
-              <a class="btn-ghost" style="color:#0e1b4d; border-color:#0e1b4d;" href="#" target="_blank">SIGIR 2024 Tool Learning Tutorial</a>
             </div>
           </div>
         </div>
@@ -634,9 +390,7 @@
 
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; EMNLP 2026 Tutorial · Lifelong Language Agents: Theory and Practice
-      </div>
+      <div class="copyright">EMNLP 2026 · Lifelong Language Agents · Theory &amp; Practice</div>
       <div class="credits">
         Contact: <a href="mailto:hongru.carrywang@gmail.com">hongru.carrywang@gmail.com</a>
       </div>
