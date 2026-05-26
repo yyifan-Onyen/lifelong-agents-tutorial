@@ -810,156 +810,151 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
   text-transform: uppercase;
 }
 
-/* ---------- Reading List (clean academic style) ---------- */
+/* ---------- Reading List (tutorial-page format) ---------- */
 #reading { background: #fff; padding: 110px 0 100px; }
 
-/* Compact legend (replaces the previous heavy "how to use" card) */
+.reading-container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* Small legend at top of reading list */
 .reading-legend {
   display: flex;
-  gap: 32px;
+  gap: 28px;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  padding: 18px 24px;
-  margin: -16px auto 56px auto;
-  max-width: 720px;
+  padding: 16px 20px;
+  margin: -16px 0 48px 0;
   border: 1px solid var(--rule);
-  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
   background: #fff;
 }
 .reading-legend .legend-item {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-size: 13.5px;
   color: var(--ink-soft);
   line-height: 1.4;
-}
-.reading-legend .star {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  color: var(--accent);
-  font-size: 14px;
-}
-.reading-legend .dot {
-  width: 6px; height: 6px;
-  background: var(--ink-soft);
-  opacity: 0.4;
-  border-radius: 50%;
-  display: inline-block;
 }
 .reading-legend strong {
   color: var(--navy);
   font-weight: 600;
 }
+.reading-legend .legend-item.pre strong { color: var(--accent); }
 
-/* Module block */
+/* Module block — numbered like "1. Foundations of Agents" */
 .reading-module {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 56px 0;
+  padding: 48px 0 8px 0;
   border-top: 1px solid var(--rule);
 }
-.reading-module:first-of-type { border-top: none; padding-top: 0; }
+.reading-module:first-of-type { border-top: none; padding-top: 8px; }
 
-.reading-module .module-header {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
 .reading-module h3 {
   font-family: var(--display);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   color: var(--navy);
-  margin: 0;
+  margin: 0 0 12px 0;
   letter-spacing: -0.005em;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
 }
-.reading-module .module-num {
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
+.reading-module h3 .module-number {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+  font-size: 26px;
+  letter-spacing: 0;
 }
 .reading-module .module-intro {
   font-family: var(--sans);
   font-size: 15.5px;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--ink-soft);
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 0 28px 0;
 }
 
-/* Group within a module (Pre-reading / Additional) */
-.papers-group { margin-top: 22px; }
+/* Group: Pre-reading or Additional reading */
+.papers-group { margin-top: 32px; }
+.papers-group:first-of-type { margin-top: 24px; }
 .papers-group .group-label {
-  font-family: var(--mono);
-  font-size: 10.5px;
-  font-weight: 500;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin: 0 0 10px 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--navy);
+  margin: 0 0 18px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  letter-spacing: -0.005em;
 }
-.papers-group.pre .group-label { color: var(--accent); }
+.papers-group.pre .group-label {
+  color: var(--accent);
+  border-bottom-color: rgba(248,34,73,0.25);
+}
 
+/* Paper: title on top, authors below */
 .paper-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .paper-list .paper {
-  display: grid;
-  grid-template-columns: 22px 1fr;
-  gap: 12px;
-  padding: 8px 0;
-  align-items: baseline;
-  font-size: 15.5px;
-  line-height: 1.55;
+  padding: 14px 0;
+  display: block;
+}
+.paper-list .paper + .paper {
+  border-top: 1px solid #f4f5fa;
 }
 
-.paper .marker {
-  font-size: 13px;
-  color: var(--ink-soft);
-  opacity: 0.55;
-  text-align: center;
-  line-height: 1.6;
-}
-.papers-group.pre .paper .marker {
-  color: var(--accent);
-  opacity: 1;
-  font-size: 14px;
-}
-
-.paper .author {
+.paper .paper-title {
+  font-family: var(--display);
   font-weight: 600;
   color: var(--navy);
+  font-size: 16px;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+  display: block;
+  margin-bottom: 4px;
 }
-.paper .author .etal {
-  font-style: italic;
-  font-weight: 400;
+.paper .paper-link {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  vertical-align: baseline;
 }
-.paper .title {
-  color: var(--ink);
+.paper .paper-link::before { content: "["; color: var(--ink-soft); opacity: 0.55; margin-right: 1px; }
+.paper .paper-link::after { content: "]"; color: var(--ink-soft); opacity: 0.55; margin-left: 1px; }
+.paper .paper-link:hover {
+  color: var(--navy);
+  border-bottom-color: var(--accent);
 }
-.paper .title::before {
-  content: " · ";
+.paper .paper-authors {
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--ink-soft);
-  opacity: 0.5;
-  margin: 0 4px 0 2px;
+  line-height: 1.55;
+  display: block;
 }
 
 @media (max-width: 600px) {
-  .reading-module .module-header { gap: 8px; }
-  .reading-module h3 { font-size: 21px; }
-  .paper-list .paper { font-size: 14.5px; }
+  .reading-module h3 { font-size: 22px; }
+  .reading-module h3 .module-number { font-size: 22px; }
+  .paper .paper-title { font-size: 15px; }
+  .paper .paper-authors { font-size: 13.5px; }
 }
 
 /* ---------- AOS animation polish ---------- */

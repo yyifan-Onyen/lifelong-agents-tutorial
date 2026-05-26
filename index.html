@@ -306,159 +306,236 @@
         <div class="section-header">
           <h2>§ 06 · Reading List</h2>
           <span class="display-title">A curated path through the <em>field</em>.</span>
-          <p>Organized by tutorial lifecycle — pre-readings recommended before attending, additional readings for broader background.</p>
+          <p>Organized by tutorial lifecycle &mdash; pre-readings recommended before attending, additional readings for broader background. Paper links will be added as releases become public.</p>
         </div>
 
-        <div class="reading-legend">
-          <div class="legend-item">
-            <span class="star">★</span>
-            <span><strong>Pre-reading</strong> — recommended before the tutorial</span>
+        <div class="reading-container">
+          <div class="reading-legend">
+            <div class="legend-item pre">
+              <strong>Pre-reading</strong>
+              <span>recommended before the tutorial</span>
+            </div>
+            <div class="legend-item">
+              <strong>Additional</strong>
+              <span>broader background for self-study</span>
+            </div>
           </div>
-          <div class="legend-item">
-            <span class="dot"></span>
-            <span><strong>Additional</strong> — broader background, self-study</span>
-          </div>
-        </div>
 
         <article class="reading-module" data-aos="fade-up">
-          <div class="module-header">
-            <h3>Foundations of Agents</h3>
-            <span class="module-num">Module 02</span>
-          </div>
+          <h3><span class="module-number">1.</span><span>Foundations of Agents</span></h3>
           <p class="module-intro">
             This module introduces the diagnostic vocabulary of the tutorial &mdash; knowledge boundaries, epistemic necessity, and effort allocation. The readings span general reasoning-and-acting frameworks and the work that motivates the Theory of Agent perspective.
           </p>
 
           <div class="papers-group pre">
-            <div class="group-label">Pre-reading</div>
+            <h4 class="group-label">Pre-reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">★</span><div><span class="author">Wang <span class="etal">et al.</span></span><span class="title">Position: Agents Should Invoke External Tools ONLY When Epistemically Necessary.</span></div></li>
-              <li class="paper"><span class="marker">★</span><div><span class="author">Yao <span class="etal">et al.</span></span><span class="title">ReAct: Synergizing Reasoning and Acting in Language Models.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">Position: Agents Should Invoke External Tools ONLY When Epistemically Necessary.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Hongru Wang et al.</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">ReAct: Synergizing Reasoning and Acting in Language Models.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao</span>
+              </li>
             </ul>
           </div>
 
           <div class="papers-group">
-            <div class="group-label">Additional reading</div>
+            <h4 class="group-label">Additional reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">•</span><div><span class="author">Wei <span class="etal">et al.</span></span><span class="title">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Yao <span class="etal">et al.</span></span><span class="title">Tree of Thoughts: Deliberate Problem Solving with Large Language Models.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Shinn <span class="etal">et al.</span></span><span class="title">Reflexion: Language Agents with Verbal Reinforcement Learning.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Sumers <span class="etal">et al.</span></span><span class="title">Cognitive Architectures for Language Agents.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, Denny Zhou</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Tree of Thoughts: Deliberate Problem Solving with Large Language Models.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Reflexion: Language Agents with Verbal Reinforcement Learning.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Cognitive Architectures for Language Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths</span>
+              </li>
             </ul>
           </div>
         </article>
 
         <article class="reading-module" data-aos="fade-up">
-          <div class="module-header">
-            <h3>Capability Formation</h3>
-            <span class="module-num">Module 03</span>
-          </div>
+          <h3><span class="module-number">2.</span><span>Capability Formation</span></h3>
           <p class="module-intro">
             These papers cover how agents acquire the capabilities needed for sustained operation &mdash; from tool invocation and tool creation to interaction-based learning. The selection spans foundational tool-use work and recent approaches to tool-learning RL.
           </p>
 
           <div class="papers-group pre">
-            <div class="group-label">Pre-reading</div>
+            <h4 class="group-label">Pre-reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">★</span><div><span class="author">Schick <span class="etal">et al.</span></span><span class="title">Toolformer: Language Models Can Teach Themselves to Use Tools.</span></div></li>
-              <li class="paper"><span class="marker">★</span><div><span class="author">Qin <span class="etal">et al.</span></span><span class="title">ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">Toolformer: Language Models Can Teach Themselves to Use Tools.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Timo Schick, Jane Dwivedi-Yu, Roberto Dess&iacute;, Roberta Raileanu, Maria Lomeli, Luke Zettlemoyer, Nicola Cancedda, Thomas Scialom</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Yujia Qin, Shihao Liang, Yining Ye, Kunlun Zhu, Lan Yan, Yaxi Lu, Yankai Lin, Xin Cong, Xiangru Tang, Bill Qian, Sihan Zhao, Lauren Hong, Runchu Tian, Ruobing Xie, Jie Zhou, Mark Gerstein, Dahai Li, Zhiyuan Liu, Maosong Sun</span>
+              </li>
             </ul>
           </div>
 
           <div class="papers-group">
-            <div class="group-label">Additional reading</div>
+            <h4 class="group-label">Additional reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">•</span><div><span class="author">Qian <span class="etal">et al.</span></span><span class="title">CREATOR: Tool Creation for Disentangling Abstract and Concrete Reasoning of Large Language Models.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Qin <span class="etal">et al.</span></span><span class="title">Tool Learning with Foundation Models.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Shen <span class="etal">et al.</span></span><span class="title">HuggingGPT: Solving AI Tasks with ChatGPT and Its Friends in HuggingFace.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Qian <span class="etal">et al.</span></span><span class="title">ToolRL: Reward is All Tool Learning Needs.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">CREATOR: Tool Creation for Disentangling Abstract and Concrete Reasoning of Large Language Models.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Cheng Qian, Chi Han, Yi R. Fung, Yujia Qin, Zhiyuan Liu, Heng Ji</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Tool Learning with Foundation Models.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Yujia Qin, Shengding Hu, Yankai Lin, Weize Chen, Ning Ding, Ganqu Cui, Zheni Zeng, Yufei Huang, Chaojun Xiao, Chi Han, Yi R. Fung, Yusheng Su, Huadong Wang, Cheng Qian, Runchu Tian, Kunlun Zhu, Shihao Liang, Xingyu Shen, Bokai Xu, Zhen Zhang, Yining Ye, Bowen Li, Ziwei Tang, Jing Yi, Yuzhang Zhu, Zhenning Dai, Lan Yan, Xin Cong, Yaxi Lu, Weilin Zhao, Yuxiang Huang, Junxi Yan, Xu Han, Xian Sun, Dahai Li, Jason Phang, Cheng Yang, Tongshuang Wu, Heng Ji, Zhiyuan Liu, Maosong Sun</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">HuggingGPT: Solving AI Tasks with ChatGPT and Its Friends in HuggingFace.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">ToolRL: Reward is All Tool Learning Needs.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Cheng Qian, Emre Can Acikgoz, Qi He, Hongru Wang, Xiusi Chen, Dilek Hakkani-T&uuml;r, Gokhan Tur, Heng Ji</span>
+              </li>
             </ul>
           </div>
         </article>
 
         <article class="reading-module" data-aos="fade-up">
-          <div class="module-header">
-            <h3>Behavior &amp; Alignment</h3>
-            <span class="module-num">Module 04</span>
-          </div>
+          <h3><span class="module-number">3.</span><span>Behavior &amp; Alignment</span></h3>
           <p class="module-intro">
-            Here we focus on deployment-time control: when an agent should reason, act, retrieve, or stop. The readings cover think-versus-act routing, tool overuse mitigation, retrieval gating, and the alignment paradigms (RLHF, DPO) that shape an agent’s behavior.
+            Here we focus on deployment-time control: when an agent should reason, act, retrieve, or stop. The readings cover think-versus-act routing, tool overuse mitigation, retrieval gating, and the alignment paradigms (RLHF, DPO) that shape an agent&rsquo;s behavior.
           </p>
 
           <div class="papers-group pre">
-            <div class="group-label">Pre-reading</div>
+            <h4 class="group-label">Pre-reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">★</span><div><span class="author">Qian <span class="etal">et al.</span></span><span class="title">SMART: Self-Aware Agent for Tool Overuse Mitigation.</span></div></li>
-              <li class="paper"><span class="marker">★</span><div><span class="author">Asai <span class="etal">et al.</span></span><span class="title">Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">SMART: Self-Aware Agent for Tool Overuse Mitigation.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Cheng Qian, Emre Can Acikgoz, Hongru Wang, Xiusi Chen, Avirup Sil, Dilek Hakkani-T&uuml;r, Gokhan Tur, Heng Ji</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, Hannaneh Hajishirzi</span>
+              </li>
             </ul>
           </div>
 
           <div class="papers-group">
-            <div class="group-label">Additional reading</div>
+            <h4 class="group-label">Additional reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">•</span><div><span class="author">Wang <span class="etal">et al.</span></span><span class="title">Self-DC: When to Retrieve and When to Generate?</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Ouyang <span class="etal">et al.</span></span><span class="title">Training Language Models to Follow Instructions with Human Feedback.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Rafailov <span class="etal">et al.</span></span><span class="title">Direct Preference Optimization: Your Language Model is Secretly a Reward Model.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Xia <span class="etal">et al.</span></span><span class="title">SafeToolBench: A Benchmark for Pre-Execution Tool-Safety in Language Agents.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">Self-DC: When to Retrieve and When to Generate? Self Divide-and-Conquer for Compositional Unknown Questions.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Hongru Wang, Boyang Xue, Baohang Zhou, Tianhua Zhang, Cunxiang Wang, Huimin Wang, Guanhua Chen, Kam-Fai Wong</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Training Language Models to Follow Instructions with Human Feedback.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda Askell, Peter Welinder, Paul Christiano, Jan Leike, Ryan Lowe</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Direct Preference Optimization: Your Language Model is Secretly a Reward Model.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, Chelsea Finn</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">SafeToolBench: A Benchmark for Pre-Execution Tool-Safety in Language Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Hongfei Xia et al.</span>
+              </li>
             </ul>
           </div>
         </article>
 
         <article class="reading-module" data-aos="fade-up">
-          <div class="module-header">
-            <h3>Evolution of Agents</h3>
-            <span class="module-num">Module 05</span>
-          </div>
+          <h3><span class="module-number">4.</span><span>Evolution of Agents</span></h3>
           <p class="module-intro">
             These papers move beyond single-session behavior to long-term evolution &mdash; lifelong skill acquisition, persistent memory, multi-agent co-adaptation, and the emerging landscape of agentic reinforcement learning.
           </p>
 
           <div class="papers-group pre">
-            <div class="group-label">Pre-reading</div>
+            <h4 class="group-label">Pre-reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">★</span><div><span class="author">Wang <span class="etal">et al.</span></span><span class="title">Voyager: An Open-Ended Embodied Agent with Large Language Models.</span></div></li>
-              <li class="paper"><span class="marker">★</span><div><span class="author">Park <span class="etal">et al.</span></span><span class="title">Generative Agents: Interactive Simulacra of Human Behavior.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">Voyager: An Open-Ended Embodied Agent with Large Language Models.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">Generative Agents: Interactive Simulacra of Human Behavior.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein</span>
+              </li>
             </ul>
           </div>
 
           <div class="papers-group">
-            <div class="group-label">Additional reading</div>
+            <h4 class="group-label">Additional reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">•</span><div><span class="author">Packer <span class="etal">et al.</span></span><span class="title">MemGPT: Towards LLMs as Operating Systems.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Yang <span class="etal">et al.</span></span><span class="title">OASIS: Open Agents Social Interaction Simulations on One Million Agents.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Xue <span class="etal">et al.</span></span><span class="title">CoMAS: Co-Evolving Multi-Agent Systems via Interaction Rewards.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Zhang <span class="etal">et al.</span></span><span class="title">The Landscape of Agentic Reinforcement Learning for LLMs.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">MemGPT: Towards LLMs as Operating Systems.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Charles Packer, Sarah Wooders, Kevin Lin, Vivian Fang, Shishir G. Patil, Ion Stoica, Joseph E. Gonzalez</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">OASIS: Open Agents Social Interaction Simulations on One Million Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Ziyi Yang, Zaibin Zhang, Zirui Zheng, Yuxian Jiang, Ziyue Gan, Zhenfei Yin, Jing Shao, et al.</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">CoMAS: Co-Evolving Multi-Agent Systems via Interaction Rewards.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Bowen Xue et al.</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">The Landscape of Agentic Reinforcement Learning for LLMs: A Survey.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Guibin Zhang et al.</span>
+              </li>
             </ul>
           </div>
         </article>
 
         <article class="reading-module" data-aos="fade-up">
-          <div class="module-header">
-            <h3>Evaluation of Agents</h3>
-            <span class="module-num">Module 06</span>
-          </div>
+          <h3><span class="module-number">5.</span><span>Evaluation of Agents</span></h3>
           <p class="module-intro">
             Final-answer accuracy is not enough. These readings introduce multi-dimensional, interactive, and long-horizon benchmarks &mdash; from general AI-assistant tasks to web, OS, and software-engineering environments.
           </p>
 
           <div class="papers-group pre">
-            <div class="group-label">Pre-reading</div>
+            <h4 class="group-label">Pre-reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">★</span><div><span class="author">Liu <span class="etal">et al.</span></span><span class="title">AgentBench: Evaluating LLMs as Agents.</span></div></li>
-              <li class="paper"><span class="marker">★</span><div><span class="author">Zhou <span class="etal">et al.</span></span><span class="title">WebArena: A Realistic Web Environment for Building Autonomous Agents.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">AgentBench: Evaluating LLMs as Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Xiao Liu, Hao Yu, Hanchen Zhang, Yifan Xu, Xuanyu Lei, Hanyu Lai, Yu Gu, Hangliang Ding, Kaiwen Men, Kejuan Yang, Shudan Zhang, Xiang Deng, Aohan Zeng, Zhengxiao Du, Chenhui Zhang, Sheng Shen, Tianjun Zhang, Yu Su, Huan Sun, Minlie Huang, Yuxiao Dong, Jie Tang</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">WebArena: A Realistic Web Environment for Building Autonomous Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Shuyan Zhou, Frank F. Xu, Hao Zhu, Xuhui Zhou, Robert Lo, Abishek Sridhar, Xianyi Cheng, Tianyue Ou, Yonatan Bisk, Daniel Fried, Uri Alon, Graham Neubig</span>
+              </li>
             </ul>
           </div>
 
           <div class="papers-group">
-            <div class="group-label">Additional reading</div>
+            <h4 class="group-label">Additional reading</h4>
             <ul class="paper-list">
-              <li class="paper"><span class="marker">•</span><div><span class="author">Mialon <span class="etal">et al.</span></span><span class="title">GAIA: A Benchmark for General AI Assistants.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Xie <span class="etal">et al.</span></span><span class="title">OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments.</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Jimenez <span class="etal">et al.</span></span><span class="title">SWE-bench: Can Language Models Resolve Real-World GitHub Issues?</span></div></li>
-              <li class="paper"><span class="marker">•</span><div><span class="author">Yao <span class="etal">et al.</span></span><span class="title">WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents.</span></div></li>
+              <li class="paper">
+                <span class="paper-title">GAIA: A Benchmark for General AI Assistants.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Gr&eacute;goire Mialon, Cl&eacute;mentine Fourrier, Craig Swift, Thomas Wolf, Yann LeCun, Thomas Scialom</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Tianbao Xie, Danyang Zhang, Jixuan Chen, Xiaochuan Li, Siheng Zhao, Ruisheng Cao, Toh Jing Hua, Zhoujun Cheng, Dongchan Shin, Fangyu Lei, Yitao Liu, Yiheng Xu, Shuyan Zhou, Silvio Savarese, Caiming Xiong, Victor Zhong, Tao Yu</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">SWE-bench: Can Language Models Resolve Real-World GitHub Issues?<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan</span>
+              </li>
+              <li class="paper">
+                <span class="paper-title">WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                <span class="paper-authors">Shunyu Yao, Howard Chen, John Yang, Karthik Narasimhan</span>
+              </li>
             </ul>
           </div>
         </article>
+        </div>
       </div>
     </section>
 
