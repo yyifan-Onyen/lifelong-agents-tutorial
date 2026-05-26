@@ -43,6 +43,3 @@ The site is a static HTML/CSS/JS bundle — Bootstrap, AOS, and Bootstrap Icons 
 
 This site is designed to be served with GitHub Pages. Push to `main`, then enable GitHub Pages in the repository settings (Source: `Deploy from a branch`, Branch: `main`, Folder: `/ (root)`).
 
-## Acknowledgements
-
-Template adapted from the [Lifelong Agents Workshop](https://lifelongagent.github.io/) site (TheEvent by BootstrapMade).
